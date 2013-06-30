@@ -8,7 +8,6 @@ app.directive("example", ["$http", "ExampleModel", function($http, ExampleModel)
 
     function update() {
       return ExampleModel.success(onSuccess);
-      //return ExampleModel.getData(scope.widget).success(onSuccess);
     }
 
     scope.counter = 0;

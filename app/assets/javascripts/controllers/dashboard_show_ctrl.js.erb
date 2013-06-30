@@ -14,13 +14,13 @@ app.controller("DashboardShowCtrl", ["$scope", "$rootScope", "$routeParams", "$l
     $scope.dashboard.$update(function(data) {
       console.log(data);
     }, function(data) {
-        console.log("save error", data);
+      console.log("save error", data);
     });
   }
 
   function destroyDashboard() {
-      $scope.dashboard.$destroy(function() {
-          $location.url("/dashboards");
+    $scope.dashboard.$destroy(function() {
+      $location.url("/dashboards");
     });
   }
 
